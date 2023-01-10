@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
 template <typename T>
-void mySwab(T &,T &);
+void mySwap(T &,T &);
 
 int main(){
-    int x,y;
+	int x, y;
 	string a, b;
 	char p, q;
 	
@@ -30,9 +30,9 @@ int main(){
 
 	return 0;
 }
+
 template <typename T>
-void mySwab(T &x,T &y)
-{
+void mySwap(T &x,T &y){
 	T z = x;
 	 x = y;
 	y = z;
