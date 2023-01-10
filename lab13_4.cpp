@@ -1,9 +1,10 @@
 #include<iostream>
-
 using namespace std;
+template <typename T>
+void mySwab(T &,T &);
 
 int main(){
-	int x, y;
+    int x,y;
 	string a, b;
 	char p, q;
 	
@@ -28,5 +29,12 @@ int main(){
 	cout << "p = " << p << ", q = " << q << "\n";
 
 	return 0;
+}
+template <typename T>
+void mySwab(T &x,T &y)
+{
+	T z = x;
+	 x = y;
+	y = z;
 }
 
